@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #da2313;
+  --secondary-color: #2d5013;
+  --text-color: #333;
+  --head-color: #252525;
+  --white: #fff;
+  --light-grey: #f5f5f5;
+  --dark-grey: #444;
+  --gray-text: #646464;
+}
+@font-face {
+  font-family: "Hartwell Bold";
+  src: url("./assets/hartwell-alt-webfont/HartwellBold.woff") format("woff"),
+    url("./assets/hartwell-alt-webfont/HartwellBold.woff") format("woff"),
+    url("./assets/hartwell-alt-webfont/HartwellBold.woff") format("truetype");
+}
+@font-face {
+  font-family: "Hartwell";
+  src: url("./assets/hartwell-alt-webfont/HartwellMedium.woff") format("woff"),
+    url("./assets/hartwell-alt-webfont/HartwellMedium.woff") format("woff"),
+    url("./assets/hartwell-alt-webfont/HartwellMedium.woff") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hartwell Bold", Arial, sans-serif;
+}
+
+/* * {
+  outline: 1px solid #b81d10;
+} */
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Hartwell Bold", Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 14px 40px;
+  border-radius: 13px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #b81d10;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.Calque_2 .cls-1 {
+  fill: #da2313; /*#f81c08 for symbil morocco*/
+}
+.Calque_2 .cls-2 {
+  fill: #2d5013;
+}
+.Calque_2 .cls-3 {
+  fill: #fff;
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 12px 30px;
+  }
+}

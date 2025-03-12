@@ -1,0 +1,156 @@
+.mission {
+  background-color: var(--white);
+  padding: 80px 0;
+  position: relative;
+}
+
+.mission .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mission-content {
+  width: 100%;
+}
+
+.mission-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mission-text {
+  margin-bottom: 30px;
+}
+
+.mission-text p {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: clamp(0.875rem, 0.8167rem + 0.3333vw, 1.125rem);
+  text-align: center;
+  /* margin-bottom: 15px; */
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: "Hartwell", sans-serif;
+  font-weight: bolder;
+}
+
+.mission-strategies {
+  display: flex;
+  flex-direction: column;
+}
+
+.strategy {
+  font-size: clamp(0.875rem, 0.77rem + 0.6vw, 1.4rem);
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-align: center;
+}
+
+.mission-logo {
+  position: absolute;
+  width: 390px;
+}
+.mission-logo.red-log {
+  top: 0;
+  left: -200px;
+  fill: var(--primary-color);
+  transform: rotate(-168deg);
+}
+.mission-logo.green-log {
+  top: 50%;
+  right: -270px;
+  fill: var(--secondary-color);
+  transform: rotate(25deg);
+}
+
+.mission-logo svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1480px) {
+  .mission-logo {
+    width: 350px;
+  }
+  .mission-logo.red-log {
+    left: -226px;
+  }
+  .mission-logo.green-log {
+    right: -240px;
+  }
+}
+@media (max-width: 1338px) {
+  .mission-logo {
+    width: 320px;
+  }
+  .mission-logo.red-log {
+    left: -236px;
+    transform: rotate(-148deg);
+    top: -20px;
+  }
+  .mission-text p {
+    letter-spacing: 0.03em;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+  .mission-title {
+    font-size: 1.9rem;
+  }
+  .mission-text p {
+    letter-spacing: 0.02em;
+    font-size: 14px;
+  }
+
+  .nav-links {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 5px 10px;
+  }
+
+  .hero-content,
+  .hero-images {
+    flex: 0 0 100%;
+  }
+
+  .hero-content {
+    margin-bottom: 40px;
+    padding-right: 0;
+  }
+
+  .mission .container {
+    flex-direction: column;
+  }
+
+  .mission-content,
+  .mission-logo {
+    flex: 0 0 100%;
+  }
+
+  .mission-logo {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 380px) {
+  .mission-title {
+    font-size: 1.4rem;
+  }
+  .mission-text p {
+    letter-spacing: 0.02em;
+    font-size: 13px;
+  }
+}

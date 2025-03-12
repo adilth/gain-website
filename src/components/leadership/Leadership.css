@@ -1,0 +1,155 @@
+.leadership {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 60px 0;
+  position: relative;
+  overflow-x: visible;
+  /* background: var(--primary-color) url("/images/leadershipImage.webp") no-repeat;
+  background-position: right top;
+  background-size: 23%; */
+}
+
+.leadership-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leadership-content {
+  max-width: 75%;
+  padding-right: 40px;
+}
+
+.leadership-title {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.leadership-text {
+  margin-bottom: 13px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+.leadership-text.list {
+  margin-bottom: 4px;
+}
+
+.expertise-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expertise-list li {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.leadership-image {
+  position: absolute;
+  top: -182px;
+  right: 4px;
+  width: 50%;
+  max-width: 698px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.leadership-image img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+@media (max-width: 1780px) {
+  .leadership-image {
+    top: -130px;
+    right: -5px;
+    max-width: 650px;
+  }
+  .leadership-content {
+    max-width: 70%;
+  }
+}
+@media (max-width: 1580px) {
+  .leadership-image {
+    top: -100px;
+    right: -10px;
+  }
+  .leadership-content {
+    max-width: 65%;
+  }
+}
+@media (max-width: 1380px) {
+  .leadership-image {
+    top: -100px;
+    right: -10px;
+  }
+  .leadership-content {
+    max-width: 59%;
+  }
+}
+@media (max-width: 1248px) {
+  .leadership-image {
+    top: 36px;
+    right: -10px;
+    max-width: 680px;
+  }
+  .leadership-content {
+    max-width: 52%;
+  }
+}
+/* @media (max-width: 1248px) {
+  .leadership-image {
+    top: -52px;
+    right: -140px;
+    width: 690px;
+  }
+  .leadership-content {
+    max-width: 54%;
+  }
+} */
+@media (max-width: 922px) {
+  /* .leadership-image {
+    top: 2px;
+    right: -130px;
+    width: 590px;
+  } */
+  .leadership-title {
+    font-size: 1.9rem;
+    line-height: 1.4;
+  }
+  .leadership-text {
+    margin-bottom: 13px;
+    line-height: 1.4;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .leadership {
+    padding: 60px 0 0px;
+  }
+  .leadership-text {
+    text-align: center;
+  }
+  .expertise-list {
+    text-align: center;
+  }
+  .leadership-title {
+    text-align: center;
+  }
+  .leadership-container {
+    flex-direction: column;
+  }
+
+  .leadership-content {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .leadership-image {
+    position: relative; /* Change to relative on mobile */
+    top: 0px;
+    right: 0;
+    width: 100%;
+  }
+}
