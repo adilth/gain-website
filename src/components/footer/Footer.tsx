@@ -8,6 +8,17 @@ import {
 } from "../../assets/Icons";
 import "./Footer.css";
 export default function Footer() {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === "Enter" || event.key === " ") {
+      scrollToTop();
+    }
+  };
   return (
     <footer className="footer">
       <div className="top-footer">
@@ -82,11 +93,18 @@ export default function Footer() {
                     <a href="#newsletter">Newsletter</a>
                   </li>
                 </ul>
-                <a href="#donate" className="donate-btn">
+                <div
+                  className="donate-btn"
+                  onClick={scrollToTop}
+                  onKeyDown={handleKeyPress}
+                  tabIndex={0}
+                  role="button"
+                  aria-label="Scroll to top"
+                >
                   <span>
                     <ScrollToTopIcon />
                   </span>
-                </a>
+                </div>
               </div>
             </div>
           </div>

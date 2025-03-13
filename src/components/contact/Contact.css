@@ -66,7 +66,14 @@
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
+@media (max-width: 1280px) {
+  .contact-container {
+    gap: 2rem;
+  }
+  .contact-image {
+    flex: 0 0 54%;
+  }
+}
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;

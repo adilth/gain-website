@@ -135,6 +135,11 @@
     height: 40px;
   }
 }
+@media (max-width: 558px) {
+  .top-nav {
+    display: none;
+  }
+}
 
 @keyframes fadeIn {
   from {

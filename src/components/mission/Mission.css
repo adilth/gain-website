@@ -80,7 +80,7 @@
     width: 350px;
   }
   .mission-logo.red-log {
-    left: -226px;
+    left: -239px;
   }
   .mission-logo.green-log {
     right: -240px;
@@ -101,9 +101,6 @@
   }
 }
 @media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-  }
   .mission-title {
     font-size: 1.9rem;
   }
@@ -113,7 +110,6 @@
   }
 
   .nav-links {
-    margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
   }
