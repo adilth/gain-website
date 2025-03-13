@@ -1,7 +1,7 @@
 import "./Leadership.css";
 export default function Leadership() {
   return (
-    <section className="leadership">
+    <section className="leadership" id="partnership">
       <div className="container leadership-container">
         <div className="leadership-content">
           <h2 className="leadership-title">Our Leadership & Team</h2>

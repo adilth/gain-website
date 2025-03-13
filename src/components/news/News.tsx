@@ -1,7 +1,7 @@
 import "./News.css";
 export default function News() {
   return (
-    <section className="programs section">
+    <section className="programs section" id="events">
       <div className="container">
         <div className="programs-grid">
           {/* Featured Programs Column */}

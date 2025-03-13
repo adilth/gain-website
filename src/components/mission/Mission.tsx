@@ -2,7 +2,7 @@ import { LogoMoroccoGreen, LogoMoroccoRed } from "../../assets/svgLogos";
 import "./Mission.css";
 export default function Mission() {
   return (
-    <section className="mission section">
+    <section className="mission section" id="programs">
       <div className="container">
         <div className="mission-content">
           <h2 className="mission-title">Mission Statement</h2>

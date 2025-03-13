@@ -22,25 +22,25 @@ export default function BottomNav() {
         </button>
         <ul className={`nav-links ${isMenuOpen ? "nav-active" : ""}`}>
           <li>
-            <a href="/programs">Programs & Initiatives</a>
+            <a href="#programs">Programs & Initiatives</a>
           </li>
           <li>
-            <a href="/resources">Resources</a>
+            <a href="#">Resources</a>
           </li>
           <li>
-            <a href="/events">Events & News</a>
+            <a href="#events">Events & News</a>
           </li>
           <li>
-            <a href="/partnership">Partnership</a>
+            <a href="#partnership">Partnership</a>
           </li>
           <li>
-            <a href="/funding">Funding & Support</a>
+            <a href="#">Funding & Support</a>
           </li>
           <li>
-            <a href="/about">About Us</a>
+            <a href="#">About Us</a>
           </li>
           <li>
-            <a href="/contact">Contact Us</a>
+            <a href="#contact">Contact Us</a>
           </li>
         </ul>
       </div>
