@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   FaceBookIconRed,
   InstagramIconRed,
@@ -21,7 +22,9 @@ export default function Hero() {
             <br />
             Of Volunteers And Contribute Your Time
           </p>
-          <button className="btn get-involved-btn">Get Involved</button>
+          <Link to="/get-involved" className="btn get-involved-btn">
+            Get Involved
+          </Link>
         </div>
         <div className="hero-images">
           <div className="image-grid">

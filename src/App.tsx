@@ -1,23 +1,36 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import Hero from "./components/hero/Hero";
-import Leadership from "./components/leadership/Leadership";
-import Mission from "./components/mission/Mission";
 import NavBar from "./components/navbar/NavBar";
-import News from "./components/news/News";
+import Footer from "./components/footer/Footer";
+import Home from "./pages/Home";
+import Programs from "./pages/Programs";
+import Resources from "./pages/Resources";
+import Events from "./pages/Events";
+import Partnership from "./pages/Partnership";
+import Contact from "./pages/Contact";
+import AboutUs from "./pages/AboutUs";
+import Funding from "./pages/Funding";
+import GetInvolved from "./pages/GetInvolved";
 
 function App() {
   return (
-    <main className="App">
-      <NavBar />
-      <Hero />
-      <Mission />
-      <News />
-      <Leadership />
-      <Contact />
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <main className="App">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/partnership" element={<Partnership />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/funding" element={<Funding />} />
+          <Route path="/get-involved" element={<GetInvolved />} />
+        </Routes>
+        <Footer />
+      </main>
+    </BrowserRouter>
   );
 }
 

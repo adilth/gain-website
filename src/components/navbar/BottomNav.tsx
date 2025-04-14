@@ -2,11 +2,12 @@ import { useState } from "react";
 import MenuOpen from "../../assets/Icons";
 import { GainLogo } from "../../assets/svgLogos";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 export default function BottomNav() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsOpen(!isOpen);
   };
   return (
     <nav className="navbar">
@@ -20,27 +21,27 @@ export default function BottomNav() {
         <button className="mobile-menu-btn" onClick={toggleMenu}>
           <MenuOpen />
         </button>
-        <ul className={`nav-links ${isMenuOpen ? "nav-active" : ""}`}>
+        <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li>
-            <a href="#programs">Programs & Initiatives</a>
+            <Link to="/programs">Programs & Initiatives</Link>
           </li>
           <li>
-            <a href="#">Resources</a>
+            <Link to="/resources">Resources</Link>
           </li>
           <li>
-            <a href="#events">Events & News</a>
+            <Link to="/events">Events & News</Link>
           </li>
           <li>
-            <a href="#partnership">Partnership</a>
+            <Link to="/partnership">Partnership</Link>
           </li>
           <li>
-            <a href="#">Funding & Support</a>
+            <a href="/funding">Funding & Support</a>
           </li>
           <li>
-            <a href="#">About Us</a>
+            <a href="/about">About Us</a>
           </li>
           <li>
-            <a href="#contact">Contact Us</a>
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
       </div>

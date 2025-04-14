@@ -1,0 +1,58 @@
+.about-us-page {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-grid {
+  font-family: "Hartwell", sans-serif;
+  font-weight: 600;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.about-section {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+.about-section .list {
+  margin-top: 1.3rem;
+}
+.about-section ul {
+  margin-top: 0.1rem;
+}
+.imageWrap img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.twoCol .about-section:last-child {
+  margin-top: 3rem;
+}
+.about-section h4 {
+  background-color: var(--primary-color);
+  padding: 12px 4rem;
+  width: fit-content;
+  color: var(--white);
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+}

@@ -1,0 +1,47 @@
+.get-involved-page {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.involved-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-top: 40px;
+}
+
+.involved-card {
+  background-color: var(--white);
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.involved-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.involved-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.involved-card h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 1rem 0;
+}
+
+.involved-card p {
+  font-size: 1rem;
+  color: var(--text-color);
+  padding: 0 1rem 1.5rem;
+}
