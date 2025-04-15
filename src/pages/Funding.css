@@ -6,6 +6,7 @@
   justify-content: center;
   color: white;
   text-align: center;
+  margin-top: 4rem;
 }
 
 .funding-header h1 {
@@ -17,7 +18,7 @@
 }
 .funding-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 4rem;
   padding: 2rem;
 }
@@ -30,7 +31,6 @@
 
   padding: 32px;
   overflow: hidden;
-  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .funding-card h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--primary-color);
   margin: 1rem 0;
 }
@@ -55,5 +55,26 @@
 .funding-card p {
   font-size: 1rem;
   color: var(--text-color);
-  padding: 0 1rem 1.5rem;
+}
+
+@media (max-width: 789px) {
+  .funding-header {
+    margin-top: 4rem;
+    height: 270px;
+  }
+  .funding-header h1 {
+    font-size: 2.4rem;
+  }
+  .event-card h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 509px) {
+  .funding-grid {
+    padding: 0;
+  }
+  .funding-header h1 {
+    font-size: 2.1rem;
+  }
 }

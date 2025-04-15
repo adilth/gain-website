@@ -1,7 +1,7 @@
 import "./partnership.css";
 export default function Partnership() {
   return (
-    <div className="page-container">
+    <div className="page-container partnership-page">
       <h1 className="page-title">Partnership</h1>
       <div className="leadership" id="partnership">
         <div className="container leadership-container">

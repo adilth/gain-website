@@ -16,7 +16,7 @@ export default function AboutUs() {
             </p>
           </div>
 
-          <div className="about-section">
+          <div className="about-section our-team">
             <h4>Our Leadership & Team</h4>
             <p>
               Our Team Consists Of Experienced Professionals And Passionate Leaders
@@ -30,13 +30,13 @@ export default function AboutUs() {
             </p>
             <p className="list">Our Areas Of Expertise Include:</p>
             <ul>
-              <li>Academic Interventions</li>
-              <li>Scientific Research And Vision</li>
-              <li>Assessment And Organizational Evaluation</li>
-              <li>Administrative And Management Consulting</li>
-              <li>Fiscal And Financial Management</li>
-              <li>Global NGO Strategies & Planning</li>
-              <li>Facilitating UN Emergency Responses</li>
+              <li>- Academic Interventions</li>
+              <li>- Scientific Research And Vision</li>
+              <li>- Assessment And Organizational Evaluation</li>
+              <li>- Administrative And Management Consulting</li>
+              <li>- Fiscal And Financial Management</li>
+              <li>- Global NGO Strategies & Planning</li>
+              <li>- Facilitating UN Emergency Responses</li>
             </ul>
           </div>
         </div>

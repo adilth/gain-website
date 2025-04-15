@@ -6,7 +6,6 @@
 .about-grid {
   font-family: "Hartwell", sans-serif;
   font-weight: 600;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -19,11 +18,7 @@
   padding: 20px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  height: 100%;
 }
 
 .about-section p {
@@ -31,28 +26,85 @@
   color: var(--text-color);
   line-height: 1.6;
 }
+
 .about-section .list {
   margin-top: 1.3rem;
 }
+
 .about-section ul {
   margin-top: 0.1rem;
 }
+
 .imageWrap img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
+
 .twoCol .about-section:last-child {
   margin-top: 3rem;
 }
+
 .about-section h4 {
   background-color: var(--primary-color);
-  padding: 12px 4rem;
+  padding: 8px 4rem;
   width: fit-content;
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   border-radius: 10px;
   margin-bottom: 1.2rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 900;
+  font-family: "Hartwell Bold";
+}
+
+@media (max-width: 1128px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .twoCol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .twoCol:first-child {
+    order: 3;
+  }
+  .twoCol:last-child {
+    order: 1;
+  }
+  .twoCol .about-section:last-child {
+    margin-top: 0rem;
+  }
+  .about-grid .imageWrap {
+    max-width: 600px;
+    margin: 2rem auto;
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section h4 {
+    font-size: 1.2rem;
+    padding: 8px 2rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .about-section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .about-section h4 {
+    font-size: 1.1rem;
+  }
+  .about-section ul {
+    font-size: 0.9rem;
+  }
 }

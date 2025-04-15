@@ -26,7 +26,7 @@
 }
 
 .mission-text p {
-  max-width: 1200px;
+  max-width: 95ch;
   width: 100%;
   margin: 0 auto;
   font-size: clamp(0.875rem, 0.8167rem + 0.3333vw, 1.125rem);
@@ -35,7 +35,7 @@
   line-height: 1.6;
   letter-spacing: 1px;
   font-weight: 100;
-  font-family: "Hartwell", sans-serif;
+  font-family: "Hartwell Bold", sans-serif;
   font-weight: bolder;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .strategy {
-  font-size: clamp(0.875rem, 0.77rem + 0.6vw, 1.4rem);
+  font-size: clamp(0.875rem, 0.77rem + 0.6vw, 1.35rem);
   letter-spacing: 1px;
   color: var(--primary-color);
   font-weight: bold;

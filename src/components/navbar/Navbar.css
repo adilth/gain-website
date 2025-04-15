@@ -30,6 +30,24 @@
   font-weight: bold;
   transition: color 0.3s;
 }
+.nav-links a.active {
+  color: var(--primary-color);
+}
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s;
+  margin: 0 auto;
+}
+.nav-links a:hover::after {
+  width: 90%;
+}
+.nav-links a.active::after {
+  width: 90%;
+}
 
 .nav-links a:hover {
   color: var(--primary-color);

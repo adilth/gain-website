@@ -10,7 +10,6 @@
   background-color: var(--white);
   border-radius: 8px;
   overflow: hidden;
-  text-align: center;
   background-color: #f9f9f9;
   padding: 32px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -37,13 +36,12 @@
 .event-card p {
   font-size: 1rem;
   color: var(--text-color);
-  padding: 0 1rem 1.5rem;
 }
 
 .events-header {
   margin-top: 4rem;
   background: url("/images/event-background-image.webp") center/cover no-repeat;
-  height: 350px;
+  height: 370px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,6 +49,31 @@
   text-align: center;
 }
 .events-header h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
   font-weight: bold;
+}
+
+@media (max-width: 728px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  .events-header {
+    margin-top: 4rem;
+    height: 270px;
+  }
+  .events-header h1 {
+    font-size: 2.4rem;
+  }
+  .event-card h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 509px) {
+  .events-grid {
+    padding: 0;
+  }
+  .events-header h1 {
+    font-size: 2.1rem;
+  }
 }

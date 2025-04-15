@@ -2,7 +2,7 @@ import "./Programs.css";
 
 export default function Programs() {
   return (
-    <div className="page-container container">
+    <div className="page-container programs-page container">
       <h1 className="page-title">Programs & Initiatives</h1>
       <div className="programs-grid">
         <div className="program-card">

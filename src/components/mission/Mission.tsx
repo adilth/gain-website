@@ -8,19 +8,19 @@ export default function Mission() {
           <h2 className="mission-title">Mission Statement</h2>
           <div className="mission-text">
             <p>
-              THE GLOBAL ACADEMY INTELLIGENCE GAIN NGO FORMULATION WAS DEVELOPED AS PART
-              OF OUR STRATEGIC APPROACH TO ADDRESS SUSTAINABLE HUMANITARIAN AND
-              PSYCHOSOCIAL CHALLENGES IN MOROCCO, WITH A BROADER GLOBAL STRUCTURE IN MIND.
+              The Global Academy Intelligence Gain NGO Formulation Was Developed As Part
+              Of Our Strategic Approach To Address Sustainable Humanitarian And
+              Psychosocial Challenges In Morocco, With A Broaderglobal Structure In Mind.
             </p>
             <p>
-              OUR FORMULATION PROVIDES A FRAMEWORK FOR OUR EXPERT TEAM TO SYSTEMATICALLY
-              ASSESS CULTURAL FACTORS, ORGANIZATIONAL SYSTEMS, AND SOCIAL DYNAMICS THAT
-              ARE RELEVANT TO HUMAN CONCERNS.
+              Our Formulation Provides A Framework For Our Expert Team To Systematically
+              Assess Cultural Factors, Organizational Systems, And Social Dynamics That
+              Are Relevant To Human Concerns.
             </p>
             <p>
-              BY ADDRESSING THE NEEDS, PERSPECTIVES, AND EXPERIENCES OF INDIVIDUALS, WE
-              EMPLOY FIVE PRIMARY APPROACHES TO DEVELOP SOLUTIONS THAT ARE SOCIALLY
-              IMPACTFUL AND GLOBALLY STRUCTURED:
+              By Addressing The Needs, Perspectives, And Experiences Of Individuals, We
+              Employ Five Primary Approaches To Develop Solutions That Are Socially
+              Impactful And Globally Structured:
             </p>
           </div>
           <div className="mission-strategies">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import MenuOpen from "../../assets/Icons";
 import { GainLogo } from "../../assets/svgLogos";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function BottomNav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,25 +23,60 @@ export default function BottomNav() {
         </button>
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li>
-            <Link to="/programs">Programs & Initiatives</Link>
+            <NavLink
+              className={(navData) => (navData.isActive ? "active" : "")}
+              to="/programs"
+            >
+              Programs & Initiatives
+            </NavLink>
           </li>
           <li>
-            <Link to="/resources">Resources</Link>
+            <NavLink
+              className={(navData) => (navData.isActive ? "active" : "")}
+              to="/resources"
+            >
+              Resources
+            </NavLink>
           </li>
           <li>
-            <Link to="/events">Events & News</Link>
+            <NavLink
+              className={(navData) => (navData.isActive ? "active" : "")}
+              to="/events"
+            >
+              Events & News
+            </NavLink>
           </li>
           <li>
-            <Link to="/partnership">Partnership</Link>
+            <NavLink
+              className={(navData) => (navData.isActive ? "active" : "")}
+              to="/partnership"
+            >
+              Partnership
+            </NavLink>
           </li>
           <li>
-            <a href="/funding">Funding & Support</a>
+            <NavLink
+              className={(navData) => (navData.isActive ? "active" : "")}
+              to="/funding"
+            >
+              Funding & Support
+            </NavLink>
           </li>
           <li>
-            <a href="/about">About Us</a>
+            <NavLink
+              className={(navData) => (navData.isActive ? "active" : "")}
+              to="/about"
+            >
+              About Us
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <NavLink
+              className={(navData) => (navData.isActive ? "active" : "")}
+              to="/contact"
+            >
+              Contact Us
+            </NavLink>
           </li>
         </ul>
       </div>
