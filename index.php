@@ -6,8 +6,8 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gain</title>
-    <script type="module" crossorigin src="./assets/index-ByFELBqf.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-jyt6Aj1j.css">
+    <script type="module" crossorigin src="./dist/assets/index-ByFELBqf.js"></script>
+    <link rel="stylesheet" crossorigin href="./dist/assets/index-jyt6Aj1j.css">
 </head>
 
 <body>
