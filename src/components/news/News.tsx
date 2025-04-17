@@ -1,4 +1,8 @@
 import "./News.css";
+import ConferenceHallImage from "/images/conference-hall.webp";
+import ClassroomImage from "/images/classroom.webp";
+import CollaborationImage from "/images/collaboration.webp";
+
 export default function News() {
   return (
     <section className="programs section" id="events">
@@ -7,7 +11,7 @@ export default function News() {
           {/* Featured Programs Column */}
           <div className="program-column">
             <img
-              src="/images/conference-hall.webp"
+              src={ConferenceHallImage}
               alt="International conference"
               className="program-image"
             />
@@ -44,11 +48,7 @@ export default function News() {
 
           {/* Call-To-Action Column */}
           <div className="program-column">
-            <img
-              src="/images/classroom.webp"
-              alt="Classroom setting"
-              className="program-image"
-            />
+            <img src={ClassroomImage} alt="Classroom setting" className="program-image" />
             <h3 className="column-title">Call-To-Action</h3>
 
             <div className="program-item">
@@ -77,7 +77,7 @@ export default function News() {
           {/* Latest News Column */}
           <div className="program-column">
             <img
-              src="/images/collaboration.webp"
+              src={CollaborationImage}
               alt="People collaborating"
               className="program-image"
             />
