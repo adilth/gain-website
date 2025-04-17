@@ -1,4 +1,6 @@
 import "./partnership.css";
+import LeadershipImage from "/images/leadershipImage.png";
+
 export default function Partnership() {
   return (
     <div className="page-container partnership-page">
@@ -29,7 +31,7 @@ export default function Partnership() {
             </p>
           </div>
           <div className="leadership-image">
-            <img src="/images/leadershipImage.png" alt="Leadership Team" />
+            <img src={LeadershipImage} alt="Leadership Team" />
           </div>
         </div>
       </div>

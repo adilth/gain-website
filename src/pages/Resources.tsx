@@ -1,4 +1,8 @@
 import "./Resources.css";
+import ResearchImage from "/images/research-resources.webp";
+import PolicyBriefsImage from "/images/policy-briefs-resources.webp";
+import ToolkitsImage from "/images/toolkits-guides-resources.webp";
+import PartnerImage from "/images/parner-resources.webp";
 
 export default function Resources() {
   return (
@@ -6,7 +10,7 @@ export default function Resources() {
       <h1 className="page-title">Resources</h1>
       <div className="resources-grid">
         <div className="resource-card">
-          <img src="/images/research-resources.webp" alt="Policy Briefs" />
+          <img src={ResearchImage} alt="Policy Briefs" />
           <h2>Research/Articles</h2>
           <p>
             Our comprehensive research and policy reports on key international issues,
@@ -15,7 +19,7 @@ export default function Resources() {
         </div>
 
         <div className="resource-card">
-          <img src="/images/policy-briefs-resources.webp" alt="Toolkits & Guides" />
+          <img src={PolicyBriefsImage} alt="Toolkits & Guides" />
           <h2>Policy Briefs</h2>
           <p>
             Our policy briefs summarize critical findings and suggest actionable solutions
@@ -24,7 +28,7 @@ export default function Resources() {
         </div>
 
         <div className="resource-card">
-          <img src="/images/toolkits-guides-resources.webp" alt="Partner Resources" />
+          <img src={ToolkitsImage} alt="Partner Resources" />
           <h2>Toolkits & Guides</h2>
           <p>
             Explore our collection of toolkits and guides, designed to help individuals
@@ -33,7 +37,7 @@ export default function Resources() {
         </div>
 
         <div className="resource-card">
-          <img src="/images/parner-resources.webp" alt="Research/Articles" />
+          <img src={PartnerImage} alt="Research/Articles" />
           <h2>Partner Resources</h2>
           <p>
             Our partners can access exclusive resources, reports, and collaborative tools

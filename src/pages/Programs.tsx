@@ -1,4 +1,10 @@
 import "./Programs.css";
+import ConferencesImage from "/images/international-conferences-programs.webp";
+import CollaborationImage from "/images/collaboration.webp";
+import CulturalExchangeImage from "/images/cultural-exchanges-programs.webp";
+import HumanitarianImage from "/images/humanitarian-programs.webp";
+import EducationalImage from "/images/educational-partnerships.webp";
+import commitmentImage from "/images/commitment-programs.webp";
 
 export default function Programs() {
   return (
@@ -6,10 +12,7 @@ export default function Programs() {
       <h1 className="page-title">Programs & Initiatives</h1>
       <div className="programs-grid">
         <div className="program-card">
-          <img
-            src="/images/international-conferences-programs.webp"
-            alt="International Conferences & Summits"
-          />
+          <img src={ConferencesImage} alt="International Conferences & Summits" />
           <h2>International Conferences & Summits</h2>
           <p>
             We organize global events that address key issues, such as climate change,
@@ -19,7 +22,7 @@ export default function Programs() {
         </div>
 
         <div className="program-card">
-          <img src="/images/collaboration.webp" alt="Policy Research & Advocacy" />
+          <img src={CollaborationImage} alt="Policy Research & Advocacy" />
           <h2>Policy Research & Advocacy</h2>
           <p>
             We conduct in-depth research and advocate for policies that encourage
@@ -28,10 +31,7 @@ export default function Programs() {
         </div>
 
         <div className="program-card">
-          <img
-            src="/images/cultural-exchanges-programs.webp"
-            alt="Cultural Exchange Programs"
-          />
+          <img src={CulturalExchangeImage} alt="Cultural Exchange Programs" />
           <h2>Cultural Exchange Programs</h2>
           <p>
             Our programs promote mutual scientific understanding through immersive
@@ -41,10 +41,7 @@ export default function Programs() {
         </div>
 
         <div className="program-card">
-          <img
-            src="/images/humanitarian-programs.webp"
-            alt="Humanitarian & Development Projects"
-          />
+          <img src={HumanitarianImage} alt="Humanitarian & Development Projects" />
           <h2>Humanitarian & Development Projects</h2>
           <p>
             We lead projects focused on providing disaster relief, healthcare, education,
@@ -54,10 +51,7 @@ export default function Programs() {
         </div>
 
         <div className="program-card">
-          <img
-            src="/images/educational-partnerships.webp"
-            alt="Educational Partnerships"
-          />
+          <img src={EducationalImage} alt="Educational Partnerships" />
           <h2>Educational Partnerships</h2>
           <p>
             We partner with universities and educational institutions to create
@@ -68,7 +62,7 @@ export default function Programs() {
 
         <div className="program-card">
           <img
-            src="/images/commitment-programs.webp"
+            src={commitmentImage}
             alt="Commitment to Diversity, Equity, and Inclusion"
           />
           <h2>Commitment to Diversity, Equity, and Inclusion</h2>

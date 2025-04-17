@@ -22,6 +22,12 @@ export default function BottomNav() {
           <MenuOpen />
         </button>
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
+          <li className="logo mobile-logo">
+            <a href="/">
+              {/* <img src="../../assets/gain-logo.svg" alt="Gain Logo" /> */}
+              <GainLogo />
+            </a>
+          </li>
           <li>
             <NavLink
               className={(navData) => (navData.isActive ? "active" : "")}

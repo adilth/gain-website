@@ -1,4 +1,6 @@
 import "./Leadership.css";
+import LeadershipImage from "/images/leadershipImage.png";
+
 export default function Leadership() {
   return (
     <section className="leadership" id="partnership">
@@ -29,7 +31,7 @@ export default function Leadership() {
           </ul>
         </div>
         <div className="leadership-image">
-          <img src="/images/leadershipImage.png" alt="Leadership Team" />
+          <img src={LeadershipImage} alt="Leadership Team" />
         </div>
       </div>
     </section>

@@ -1,4 +1,8 @@
 import "./Events.css";
+import UpcomingEventsImage from "/images/upcoming-events.webp";
+import PressReleasesImage from "/images/press-releases-events.webp";
+import BlogArticlesImage from "/images/blog-articles-events.webp";
+import MediaCoverageImage from "/images/media-coverage-events.webp";
 
 export default function Events() {
   return (
@@ -9,7 +13,7 @@ export default function Events() {
       <div className="container">
         <div className="events-grid">
           <div className="event-card">
-            <img src="/images/upcoming-events.webp" alt="Upcoming" />
+            <img src={UpcomingEventsImage} alt="Upcoming" />
             <h2>Upcoming</h2>
             <p>
               Join our upcoming events, webinars, and summits to engage with experts,
@@ -18,7 +22,7 @@ export default function Events() {
           </div>
 
           <div className="event-card">
-            <img src="/images/press-releases-events.webp" alt="Press Releases" />
+            <img src={PressReleasesImage} alt="Press Releases" />
             <h2>Press Releases</h2>
             <p>
               Read our latest press releases to stay informed about significant
@@ -27,7 +31,7 @@ export default function Events() {
           </div>
 
           <div className="event-card">
-            <img src="/images/blog-articles-events.webp" alt="Blog & Articles" />
+            <img src={BlogArticlesImage} alt="Blog & Articles" />
             <h2>Blog & Articles</h2>
             <p>
               Our blog includes articles, leadership pieces, and stories about our work
@@ -36,7 +40,7 @@ export default function Events() {
           </div>
 
           <div className="event-card">
-            <img src="/images/media-coverage-events.webp" alt="Media Coverage" />
+            <img src={MediaCoverageImage} alt="Media Coverage" />
             <h2>Media Coverage</h2>
             <p>
               Discover where we've been featured in the media, showcasing our initiatives

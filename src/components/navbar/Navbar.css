@@ -79,6 +79,9 @@
   width: 35px;
   height: 35px;
 }
+.mobile-logo {
+  display: none;
+}
 @media (max-width: 1280px) {
   .nav-links {
     gap: 1.5rem;
@@ -137,8 +140,11 @@
     transition: 0.3s ease-in-out;
     z-index: 999;
   }
-
-  .nav-links.nav-active {
+  .nav-links .mobile-logo {
+    display: block;
+    margin-top: -80px;
+  }
+  .nav-links.active {
     right: 0;
   }
 
