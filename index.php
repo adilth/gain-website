@@ -6,8 +6,8 @@
     <link rel="icon" type="image/svg+xml" href="./dist/gain-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gain</title>
-    <script type="module" crossorigin src="./dist/assets/index-Dhp2u8vZ.js"></script>
-    <link rel="stylesheet" crossorigin href="./dist/assets/index-Clb0vIrx.css">
+    <script type="module" crossorigin src="./dist/assets/index-CGzXmEgV.js"></script>
+    <link rel="stylesheet" crossorigin href="./dist/assets/index-O4HKz86b.css">
 </head>
 
 <body>

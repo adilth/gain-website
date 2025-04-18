@@ -48,19 +48,19 @@ export default function Footer() {
                 <h3>Menu</h3>
                 <ul>
                   <li>
-                    <a href="#programs">Programs & Initiatives</a>
+                    <a href="/programs">Programs & Initiatives</a>
                   </li>
                   <li>
-                    <a href="#resources">Resources</a>
+                    <a href="/resources">Resources</a>
                   </li>
                   <li>
-                    <a href="#events">Events & News</a>
+                    <a href="/events">Events & News</a>
                   </li>
                   <li>
-                    <a href="#partnership">Partnership</a>
+                    <a href="/partnership">Partnership</a>
                   </li>
                   <li>
-                    <a href="#funding">Funding & Support</a>
+                    <a href="/funding">Funding & Support</a>
                   </li>
                 </ul>
               </div>
@@ -84,7 +84,7 @@ export default function Footer() {
                 <h3>Infos</h3>
                 <ul>
                   <li>
-                    <a href="#about">About us</a>
+                    <a href="/about">About us</a>
                   </li>
                   <li>
                     <a href="#faq">FAQ</a>

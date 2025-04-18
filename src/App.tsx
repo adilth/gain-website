@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import AboutUs from "./pages/AboutUs";
 import Funding from "./pages/Funding";
 import GetInvolved from "./pages/GetInvolved";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/funding" element={<Funding />} />
           <Route path="/get-involved" element={<GetInvolved />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </main>

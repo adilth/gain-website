@@ -1,0 +1,43 @@
+.not-found {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.not-found h1 {
+  font-size: 8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  color: var(--head-color);
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.not-found .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .not-found h1 {
+    font-size: 6rem;
+  }
+
+  .not-found h2 {
+    font-size: 1.8rem;
+  }
+}
