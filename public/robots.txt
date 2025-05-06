@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Allow access to important files
+Allow: /sitemap.xml
+Allow: /favicon.ico
+
+Sitemap: https://gainorg.com/sitemap.xml
