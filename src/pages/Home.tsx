@@ -23,9 +23,9 @@ export default function Home() {
         canonicalUrl="/"
       />
       <Hero />
+      <Leadership />
       <Mission />
       <News />
-      <Leadership />
       <Contact />
     </>
   );

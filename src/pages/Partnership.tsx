@@ -20,31 +20,20 @@ export default function Partnership() {
         canonicalUrl="/partnership"
       />
       <div className="page-container partnership-page">
-        <h1 className="page-title">Partnership</h1>
+        <h1 className="page-title">Partnership && Collaboration</h1>
         <div className="leadership" id="partnership">
           <div className="container leadership-container">
             <div className="leadership-content">
-              <p className="leadership-text">
-                <p>
-                  We Collaborate With Governments, International Organizations (UN, EU,
-                  AU), And Intergovernmental Bodies To Advance Our Mission Of Global
-                  Cooperation.
-                </p>
-                <p>
-                  We Partner With Corporations That Share Our Commitment To Social
-                  Responsibility, Fostering Sustainable Initiatives And Impactful
-                  Partnerships.
-                </p>
-                <p>
-                  We Work With Academic Institutions And Think Thanks To Advance Research,
-                  Share Expertise, And Drive Innovation In International Relations And
-                  Development.
-                </p>
-                <p>
-                  {" "}
-                  Interested In Partnering With Us? Find Out How You Can Contribute By
-                  Reviewing Our Partnership Opportunities And Reaching Out To Our Team.
-                </p>
+              <p className="leadership-text">GAIN Thrives Through Partnerships With:</p>
+              <ul>
+                <li>Universities and research centers</li>
+                <li>Government ministries and policy leaders</li>
+                <li>NGOs and humanitarian agencies</li>
+                <li>Private sector partners and tech innovators</li>
+              </ul>
+              <p className="last-text">
+                Together, We Co-Create Scalable, Evidence-Based Solutions That Deliver
+                Measurable Impact.
               </p>
             </div>
             <div className="leadership-image">

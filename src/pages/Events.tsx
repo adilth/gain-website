@@ -179,7 +179,7 @@ export default function Events() {
             </div>
 
             <div className="event-card">
-              <img src={PressReleasesImage} alt="Press Releases" />
+              <img src={BlogArticlesImage} alt="Press Releases" />
               <h2>Press Releases</h2>
               <p>
                 Read our latest press releases to stay informed about significant
@@ -188,7 +188,7 @@ export default function Events() {
             </div>
 
             <div className="event-card">
-              <img src={BlogArticlesImage} alt="Blog & Articles" />
+              <img src={PressReleasesImage} alt="blog & articles" />
               <h2>Blog & Articles</h2>
               <p>
                 Our blog includes articles, leadership pieces, and stories about our work

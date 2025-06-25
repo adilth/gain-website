@@ -5,18 +5,29 @@
   font-weight: bold;
 }
 .page-container .leadership-container {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .page-container .leadership-container .leadership-image {
   position: absolute;
-  bottom: -7px;
-  right: 4px;
+  bottom: -8px;
+  right: 40px;
   width: 50%;
-  max-width: 601px;
+  max-width: 420px;
   pointer-events: none;
   z-index: 1;
   top: auto;
 }
 .page-container .leadership-text p {
   margin-bottom: 1.1rem;
+}
+.leadership-content ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+.leadership-content li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.last-text {
+  font-size: 1.4rem;
 }

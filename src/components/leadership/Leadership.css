@@ -12,6 +12,7 @@
 .leadership-container {
   display: flex;
   justify-content: space-between;
+  /* flex-direction: row-reverse; */
   align-items: center;
 }
 
@@ -27,8 +28,8 @@
 
 .leadership-text {
   margin-bottom: 13px;
-  line-height: 1.6;
-  font-size: 1.1rem;
+  line-height: 1.7;
+  font-size: 1.4rem;
 }
 .leadership-text.list {
   margin-bottom: 4px;
@@ -46,10 +47,10 @@
 
 .leadership-image {
   position: absolute;
-  top: -182px;
-  right: 4px;
+  top: -75px;
+  right: 85px;
   width: 50%;
-  max-width: 698px;
+  max-width: 398px;
   pointer-events: none;
   z-index: 1;
 }
