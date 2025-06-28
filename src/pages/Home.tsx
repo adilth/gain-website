@@ -1,9 +1,10 @@
 import Hero from "../components/hero/Hero";
-import Mission from "../components/mission/Mission";
+// import Mission from "../components/mission/Mission";
 import News from "../components/news/News";
 import Leadership from "../components/leadership/Leadership";
 import Contact from "../components/contact/Contact";
 import SEO from "../components/SEO";
+import Goals from "../components/goals/Goals";
 
 export default function Home() {
   return (
@@ -24,8 +25,9 @@ export default function Home() {
       />
       <Hero />
       <Leadership />
-      <Mission />
       <News />
+      <Goals />
+      {/* <Mission /> */}
       <Contact />
     </>
   );

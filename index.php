@@ -8,7 +8,7 @@
     <base href="/" />
 
     <!-- Primary Meta Tags -->
-    <title>GAiN NGO - Global Academy Intelligence Network</title>
+    <title>GAiN NGO - Global Academy Intelligence Network from php </title>
     <meta name="title" content="GAiN NGO - Global Academy Intelligence Network" />
     <meta
         name="description"
@@ -17,7 +17,7 @@
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/dist/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/dist/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/dist/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/dist/favicon-16x16.png" />00
     <link rel="manifest" href="/dist/site.webmanifest" />
 
     <!-- Mobile Meta -->
@@ -32,8 +32,8 @@
     <meta
         name="google-site-verification"
         content="Y6jcvvtw6xx3_C6vVr5tn1bIiuJpxnIj01IoZbK0VDg" />
-    <script type="module" crossorigin src="/dist/assets/index-BUvBbv9l.js"></script>
-    <link rel="stylesheet" crossorigin href="/dist/assets/index-O4HKz86b.css">
+    <script type="module" crossorigin src="/dist/assets/index-B-wAO_0w.js"></script>
+    <link rel="stylesheet" crossorigin href="/dist/assets/index-D98fLfbN.css">
 </head>
 
 <body>

@@ -1,5 +1,5 @@
 import "./Leadership.css";
-import LeadershipImage from "/images/leadershipImage.png";
+import LeadershipImage from "/images/leadershipImage.webp";
 
 export default function Leadership() {
   return (
