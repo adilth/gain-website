@@ -1,5 +1,5 @@
 import "./partnership.css";
-import LeadershipImage from "/images/leadershipImage.png";
+import LeadershipImage from "/images/leadershipImage-right.webp";
 import SEO from "../components/SEO";
 
 export default function Partnership() {
