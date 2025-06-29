@@ -1,5 +1,5 @@
 import "./Funding.css";
-
+import visionImg from "/images/vison-img.webp";
 import SEO from "../components/SEO";
 import { CollaborateIcon, HandShakeIcon, UsersIcon } from "../assets/Icons";
 import { ContactPage } from "../components/contact/ContactPage";
@@ -103,6 +103,9 @@ export default function Funding() {
             <div className="cta-section">
               <h2>Interested In Partnering Or Funding Our Initiatives?</h2>
               <p>Let's co-create a future of equity, innovation, and inclusion.</p>
+              <div className="img-wrapper">
+                <img src={visionImg} alt="our vision group look to future to leads" />
+              </div>
             </div>
           </div>
         </div>

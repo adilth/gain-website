@@ -3,7 +3,7 @@ import LeadershipImage from "/images/leadershipImage.webp";
 
 export default function Leadership() {
   return (
-    <section className="leadership" id="partnership">
+    <section className="leadership section" id="partnership">
       <div className="container leadership-container">
         <div className="leadership-content">
           <h2 className="leadership-title">Welcome to GAIN's NGO</h2>

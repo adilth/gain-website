@@ -1,11 +1,12 @@
 import "./Programs.css";
 import ConferencesImage from "/images/international-conferences-programs.webp";
-import CollaborationImage from "/images/collaboration.webp";
+import CollaborationImage from "/images/featured-smart-green.webp";
 import CulturalExchangeImage from "/images/cultural-exchanges-programs.webp";
-import HumanitarianImage from "/images/humanitarian-programs.webp";
-import EducationalImage from "/images/educational-partnerships.webp";
-import commitmentImage from "/images/commitment-programs.webp";
+import HumanitarianImage from "/images/collaboration-programs.webp";
+// import EducationalImage from "/images/educational-partnerships.webp";
+// import commitmentImage from "/images/commitment-programs.webp";
 import SEO from "../components/SEO";
+import { Link } from "react-router-dom";
 
 export default function Programs() {
   return (
@@ -15,7 +16,7 @@ export default function Programs() {
         description="Explore our global initiatives including international conferences, cultural exchanges, humanitarian projects, and educational partnerships. Make a difference with GAiN NGO."
         keywords={[
           "international conferences",
-          "cultural exchange programs",
+          "smart Green Cities Project",
           "humanitarian projects",
           "educational partnerships",
           "NGO programs",
@@ -25,71 +26,41 @@ export default function Programs() {
         canonicalUrl="/programs"
       />
       <div className="page-container programs-page container">
-        <h1 className="page-title">Programs & Initiatives</h1>
+        <h1 className="page-title">Featured Initiatives</h1>
         <div className="programs-grid">
-          <div className="program-card">
-            <img src={ConferencesImage} alt="International Conferences & Summits" />
-            <h2>International Conferences & Summits</h2>
+          <Link to="/programs/africa-morocco-ai" className="program-card">
+            <img src={HumanitarianImage} alt="Africa-Morocco AI, Fiscal and taxes " />
+            <h2>Africa-Morocco AI, Fiscal and taxes </h2>
             <p>
-              We organize global events that address key issues, such as climate change,
-              special needs, human rights, and international trade, fostering dialogue
-              between leaders, experts, and change-makers.
+              AI Strategic, Integration, Advancing Morocco Lead in Africa, Fiscal and
+              Taxes digital strategies, and solutions.
             </p>
-          </div>
+          </Link>
 
-          <div className="program-card">
+          <Link to="/programs/smart-green-cities" className="program-card">
             <img src={CollaborationImage} alt="Policy Research & Advocacy" />
-            <h2>Policy Research & Advocacy</h2>
+            <h2>Smart Green Cities Project</h2>
             <p>
-              We conduct in-depth research and advocate for policies that encourage
-              sustainable development, global peace, and improved international relations.
+              Building climate-resilient cities powered by clean Energyand AI
+              optimization.
             </p>
-          </div>
+          </Link>
 
-          <div className="program-card">
-            <img src={CulturalExchangeImage} alt="Cultural Exchange Programs" />
-            <h2>Cultural Exchange Programs</h2>
-            <p>
-              Our programs promote mutual scientific understanding through immersive
-              experiences for students, professionals, and cultural groups to exchange
-              knowledge and practices.
-            </p>
-          </div>
+          <Link to="/programs/ai4education" className="program-card">
+            <img src={CulturalExchangeImage} alt="Smart Green Cities Project" />
+            <h2>Ai4education Platform</h2>
+            <p>AI-powered, inclusive learning tools for students and educators.</p>
+          </Link>
 
-          <div className="program-card">
-            <img src={HumanitarianImage} alt="Humanitarian & Development Projects" />
-            <h2>Humanitarian & Development Projects</h2>
+          <Link to="/programs/autism-summit" className="program-card">
+            <img src={ConferencesImage} alt="Ai4education Platform" />
+            <h2>Africa-Morocco Autism Summit</h2>
             <p>
-              We lead projects focused on providing disaster relief, healthcare,
-              education, and poverty alleviation, improving the lives of marginalized
-              communities worldwide.
+              A continental gathering for advocacy, training, and innovation in autism
+              care.
             </p>
-          </div>
-
-          <div className="program-card">
-            <img src={EducationalImage} alt="Educational Partnerships" />
-            <h2>Educational Partnerships</h2>
-            <p>
-              We partner with universities and educational institutions to create
-              opportunities for academic exchange, research collaboration, and
-              skill-building.
-            </p>
-          </div>
-
-          <div className="program-card">
-            <img
-              src={commitmentImage}
-              alt="Commitment to Diversity, Equity, and Inclusion"
-            />
-            <h2>Commitment to Diversity, Equity, and Inclusion</h2>
-            <p>
-              At Gain, we are dedicated to creating meaningful social impact by tackling
-              the many forms of bias that exist within societies. We uphold human rights
-              at the heart of our actions.
-            </p>
-          </div>
+          </Link>
         </div>
-        {/* <Mission /> */}
       </div>
     </>
   );

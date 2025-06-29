@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
   padding: 2rem;
-  margin: 6rem 0;
+  margin: 5rem 0;
 }
 
 .event-card {
@@ -16,7 +16,7 @@
 }
 
 .event-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -39,9 +39,9 @@
 }
 
 .events-header {
-  margin-top: 4rem;
+  margin-top: 2rem;
   background: url("/images/event-background-image.webp") center/cover no-repeat;
-  height: 370px;
+  height: 340px;
   display: flex;
   align-items: center;
   justify-content: center;

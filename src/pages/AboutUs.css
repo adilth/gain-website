@@ -1,5 +1,5 @@
 .about-us-page {
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -7,7 +7,7 @@
   font-family: "Hartwell", sans-serif;
   font-weight: 600;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 40px;
 }
@@ -18,24 +18,35 @@
   padding: 20px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
 }
 
 .about-section p {
   font-size: 1rem;
   color: var(--text-color);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .about-section .list {
   margin-top: 1.3rem;
 }
-
+.about-section ul {
+  list-style: disc;
+  margin-bottom: 0.8rem;
+}
+.about-section ul li {
+  margin-bottom: 0.5rem;
+}
+.about-section ul p {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
 .about-section ul {
   margin-top: 0.1rem;
 }
 
 .imageWrap img {
-  width: 100%;
+  width: 85%;
   height: auto;
   border-radius: 8px;
 }
@@ -51,50 +62,84 @@
   color: var(--white);
   font-size: 1.3rem;
   border-radius: 10px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   font-weight: 900;
   font-family: "Hartwell Bold";
 }
+.info-section h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  text-align: left;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+.info-section {
+  margin-bottom: 2rem;
+  text-align: left;
+  max-width: 1100px;
+}
+.info-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.info-section li {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: left;
+}
+.about-more .last-info {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 75ch;
+  margin: 2rem auto 0;
+  color: var(--text-color);
+}
+@media (max-width: 1208px) {
+  .imageWrap img {
+    width: 100%;
+  }
+}
 
-@media (max-width: 1128px) {
+@media (max-width: 912px) {
+  .about-section {
+    margin-bottom: 0;
+  }
+  .about-section ul li {
+    margin-bottom: 0.2rem;
+  }
+  .about-section p {
+    line-height: 1.6;
+  }
+  .info-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .info-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 02rem;
+  }
+  .info-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .about-more .last-info {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 679px) {
+  .imageWrap {
+    display: none;
+  }
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
   }
-
-  .twoCol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  .twoCol:first-child {
-    order: 3;
-  }
-  .twoCol:last-child {
-    order: 1;
-  }
-  .twoCol .about-section:last-child {
-    margin-top: 0rem;
-  }
-  .about-grid .imageWrap {
-    max-width: 600px;
-    margin: 2rem auto;
-    order: 2;
-  }
-}
-
-@media (max-width: 768px) {
-  .twoCol {
-    grid-template-columns: 1fr;
-  }
-
   .about-section h4 {
-    font-size: 1.2rem;
-    padding: 8px 2rem;
+    /* margin: 0 auto 1rem; */
+    font-size: 1.1rem;
   }
 }
-
 @media (max-width: 428px) {
   .about-section p {
     font-size: 0.9rem;

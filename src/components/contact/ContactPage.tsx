@@ -5,6 +5,7 @@ type FormFields = {
   email: string;
   subject: string;
   message: string;
+  phoneNumber: string;
 };
 type FormErrors = Partial<Record<keyof FormFields, string>>;
 
@@ -14,6 +15,7 @@ export function ContactPage() {
     email: "",
     subject: "",
     message: "",
+    phoneNumber: "",
   });
   const [errors, setErrors] = useState<FormErrors>({});
   const [status, setStatus] = useState<{
@@ -30,6 +32,7 @@ export function ContactPage() {
       errs.email = "Invalid email.";
     if (!form.subject.trim()) errs.subject = "Subject is required.";
     if (!form.message.trim()) errs.message = "Message is required.";
+    if (!form.phoneNumber.trim()) errs.phoneNumber = "Phone Number is required.";
     return errs;
   }
 
@@ -49,7 +52,7 @@ export function ContactPage() {
       const data = await res.json();
       if (data.success) {
         setStatus({ type: "success", message: "Your message has been sent!" });
-        setForm({ fullName: "", email: "", subject: "", message: "" });
+        setForm({ fullName: "", email: "", subject: "", message: "", phoneNumber: "" });
       } else {
         setStatus({ type: "error", message: data.message || "Failed to send message." });
       }
@@ -77,52 +80,70 @@ export function ContactPage() {
           {status.message}
         </div>
       )}
-      <div className="wrap-col">
-        <div className="form-group">
-          <label htmlFor="fullName">Full Name</label>
-          <input
-            type="text"
-            id="fullName"
-            name="fullName"
-            placeholder="Name"
-            value={form.fullName}
-            onChange={handleChange}
-          />
-          {errors.fullName && (
-            <div style={{ color: "#da2313", fontSize: 13 }}>{errors.fullName}</div>
-          )}
+      <div className="flex-group">
+        <div className="flex-input">
+          <div>
+            <div className="form-group">
+              <label htmlFor="fullName">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Name"
+                value={form.fullName}
+                onChange={handleChange}
+              />
+              {errors.fullName && (
+                <div style={{ color: "#da2313", fontSize: 13 }}>{errors.fullName}</div>
+              )}
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                value={form.email}
+                onChange={handleChange}
+              />
+              {errors.email && (
+                <div style={{ color: "#da2313", fontSize: 13 }}>{errors.email}</div>
+              )}
+            </div>
+          </div>
+          <div>
+            <div className="form-group">
+              <label htmlFor="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                value={form.subject}
+                onChange={handleChange}
+              />
+              {errors.subject && (
+                <div style={{ color: "#da2313", fontSize: 13 }}>{errors.subject}</div>
+              )}
+            </div>
+            <div className="form-group">
+              <label htmlFor="phoneNumber">Phone Number</label>
+              <input
+                type="text"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="PhoneNumber"
+                value={form.phoneNumber}
+                onChange={handleChange}
+              />
+              {errors.phoneNumber && (
+                <div style={{ color: "#da2313", fontSize: 13 }}>{errors.phoneNumber}</div>
+              )}
+            </div>
+          </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            value={form.email}
-            onChange={handleChange}
-          />
-          {errors.email && (
-            <div style={{ color: "#da2313", fontSize: 13 }}>{errors.email}</div>
-          )}
-        </div>
-        <div className="form-group">
-          <label htmlFor="subject">Subject</label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Subject"
-            value={form.subject}
-            onChange={handleChange}
-          />
-          {errors.subject && (
-            <div style={{ color: "#da2313", fontSize: 13 }}>{errors.subject}</div>
-          )}
-        </div>
-      </div>
-      <div className="wrap-col">
-        <div className="form-group message">
+        <div className="form-group message-input">
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
@@ -136,12 +157,10 @@ export function ContactPage() {
             <div style={{ color: "#da2313", fontSize: 13 }}>{errors.message}</div>
           )}
         </div>
-        <div className="form-group submit">
-          <button type="submit" className="btn" disabled={loading}>
-            {loading ? "Sending..." : "Submit"}
-          </button>
-        </div>
       </div>
+      <button type="submit" className="btn" disabled={loading}>
+        {loading ? "Sending..." : "Send Message"}
+      </button>
     </form>
   );
 }

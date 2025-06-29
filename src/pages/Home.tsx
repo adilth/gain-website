@@ -5,6 +5,7 @@ import Leadership from "../components/leadership/Leadership";
 import Contact from "../components/contact/Contact";
 import SEO from "../components/SEO";
 import Goals from "../components/goals/Goals";
+import Vision from "../components/vision/Vision";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Leadership />
       <News />
       <Goals />
+      <Vision />
       {/* <Mission /> */}
       <Contact />
     </>

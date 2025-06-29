@@ -30,6 +30,9 @@
 /* * {
   outline: 1px solid #b81d10;
 } */
+a {
+  text-decoration: none;
+}
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;

@@ -54,7 +54,12 @@
 .impact-section {
   margin-bottom: 4rem;
 }
-
+.img-wrapper {
+  width: 100%;
+}
+.img-wrapper img {
+  width: 100%;
+}
 .collaboration-grid,
 .support-grid,
 .impact-grid {
@@ -93,15 +98,13 @@
 
 .cta-section {
   text-align: center;
-  background-color: var(--primary-color);
-  color: white;
   padding: 3rem 2rem;
   border-radius: 15px;
   margin-top: 4rem;
 }
 
 .cta-section h2 {
-  color: white;
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 

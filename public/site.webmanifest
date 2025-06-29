@@ -1,0 +1,36 @@
+{
+  "name": "GAiN NGO - Global Academy Intelligence Network",
+  "short_name": "GAiN NGO",
+  "description": "Global Academy Intelligence Network (GAiN) is transforming lives through sustainable humanitarian solutions, cultural exchange, and community empowerment in Morocco and beyond.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#da2313",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/dist/gain-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/dist/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/dist/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/dist/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["education", "non-profit", "social"],
+  "lang": "en",
+  "dir": "ltr"
+}

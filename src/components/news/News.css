@@ -1,11 +1,16 @@
 .programs {
-  padding: 80px 0 100px;
+  padding: 80px 0 60px;
   background-color: var(--white);
+}
+.news-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
 }
 .programs .sub-title {
   font-size: 1.2rem;
   text-align: center;
-  font-weight: bold;
   margin-bottom: 2rem;
 }
 .programs-grid {
@@ -88,6 +93,9 @@
   .programs-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .news-title {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -100,6 +108,9 @@
 }
 
 @media (max-width: 480px) {
+  .news-title {
+    font-size: 1.5rem;
+  }
   .column-title {
     font-size: 1.1rem;
     margin-bottom: 5px;

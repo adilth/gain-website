@@ -4,6 +4,7 @@ import ThridGoal from "/images/thrid-goal.webp";
 import forthGoal from "/images/forth-goal.webp";
 import fifthGoal from "/images/fifth-goal.webp";
 import sixthGoal from "/images/sixth-goal.webp";
+import { Link } from "react-router-dom";
 
 import "./goals.css";
 export default function Goals() {
@@ -16,7 +17,7 @@ export default function Goals() {
         </p>
       </div>
       <div className="goals-grid">
-        <div className="goal-card">
+        <Link to="/goals/ai-innovation-hub" className="goal-card">
           <img
             src={firstGoal}
             alt="Morocco As Africa's AI Innovation Hub"
@@ -30,8 +31,8 @@ export default function Goals() {
               development.
             </p>
           </div>
-        </div>
-        <div className="goal-card">
+        </Link>
+        <Link to="/goals/autism-mental-health" className="goal-card">
           <img
             src={secondGoal}
             alt="Scalable Autism & Mental Health Systems"
@@ -45,8 +46,8 @@ export default function Goals() {
               digital tools.
             </p>
           </div>
-        </div>
-        <div className="goal-card">
+        </Link>
+        <Link to="/goals/green-smart-cities" className="goal-card">
           <img
             src={ThridGoal}
             alt="Green Smart Cities & Climate Tech"
@@ -60,8 +61,8 @@ export default function Goals() {
               and smart waste systems.
             </p>
           </div>
-        </div>
-        <div className="goal-card">
+        </Link>
+        <Link to="/goals/pan-african-network" className="goal-card">
           <img
             src={forthGoal}
             alt="Pan-African Innovation & Humanitarian Network"
@@ -75,8 +76,8 @@ export default function Goals() {
               transformation.
             </p>
           </div>
-        </div>
-        <div className="goal-card">
+        </Link>
+        <Link to="/goals/fiscal-governance" className="goal-card">
           <img
             src={fifthGoal}
             alt="Ethical & Transparent Fiscal Governance"
@@ -89,8 +90,8 @@ export default function Goals() {
               collection platforms for fraud detection and revenue growth.
             </p>
           </div>
-        </div>
-        <div className="goal-card">
+        </Link>
+        <Link to="/goals/global-policy-diplomacy" className="goal-card">
           <img
             src={sixthGoal}
             alt="Global Policy & Science Diplomacy"
@@ -104,7 +105,7 @@ export default function Goals() {
               international collaboration.
             </p>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

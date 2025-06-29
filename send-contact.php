@@ -43,6 +43,7 @@ try {
     $fullName = trim($data['fullName'] ?? '');
     $email = trim($data['email'] ?? '');
     $subject = trim($data['subject'] ?? '');
+    $subject = trim($data['phoneNumber'] ?? '');
     $message = trim($data['message'] ?? '');
 
     if (!$fullName || !$email || !$subject || !$message) {
@@ -101,6 +102,10 @@ try {
                     <td style='padding: 10px; border: 1px solid #ddd;'>" . htmlspecialchars($subject) . "</td>
                 </tr>
                 <tr>
+                    <td style='padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9; font-weight: bold;'>phone Number:</td>
+                    <td style='padding: 10px; border: 1px solid #ddd;'>" . htmlspecialchars($phoneNumber) . "</td>
+                </tr>
+                <tr>
                     <td style='padding: 10px; border: 1px solid #ddd; background-color: #f9f9f9; font-weight: bold;'>Message:</td>
                     <td style='padding: 10px; border: 1px solid #ddd;'>" . nl2br(htmlspecialchars($message)) . "</td>
                 </tr>
@@ -110,7 +115,7 @@ try {
         </html>";
 
         $mail->Body = $htmlBody;
-        $mail->AltBody = "New Contact Form Submission\n\nName: $fullName\nEmail: $email\nSubject: $subject\nMessage: $message";
+        $mail->AltBody = "New Contact Form Submission\n\nName: $fullName\nEmail: $email\nSubject: $subject\nphoneNumber: $phoneNumber\nMessage: $message";
 
         $mail->send();
 
@@ -120,6 +125,7 @@ try {
         $logContent .= "Subject: [Contact Form] $subject\n";
         $logContent .= "From: $fullName <$email>\n";
         $logContent .= "Date: " . date('Y-m-d H:i:s') . "\n";
+        $logContent .= "Phone Number: $phoneNumber\n";
         $logContent .= "Content: $message\n";
         $logContent .= "================================\n\n";
 

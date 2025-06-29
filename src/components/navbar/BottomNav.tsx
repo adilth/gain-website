@@ -33,7 +33,7 @@ export default function BottomNav() {
               className={(navData) => (navData.isActive ? "active" : "")}
               to="/programs"
             >
-              Programs & Initiatives
+              Featured Initiatives
             </NavLink>
           </li>
           <li>

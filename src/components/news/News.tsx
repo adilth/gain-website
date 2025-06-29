@@ -7,7 +7,7 @@ export default function News() {
   return (
     <section className="programs section" id="events">
       <div className="container">
-        <h3 className="mission-title">What We Do</h3>
+        <h3 className="news-title">What We Do</h3>
 
         <div className="program-item">
           <p className="sub-title">
