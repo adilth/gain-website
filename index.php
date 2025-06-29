@@ -16,8 +16,9 @@
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/dist/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/dist/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/dist/gain-logo.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/dist/favicon-16x16.png" />
+    <meta property="og:image" content="/dist/gain-logo.png">
     <link rel="manifest" href="/dist/site.webmanifest" />
 
     <!-- Mobile Meta -->
